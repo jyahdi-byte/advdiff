@@ -1,4 +1,4 @@
-# PDE Evolution
+# AdvDiff
 
 A C++ library of finite-difference solvers for **time-evolving PDEs**: 1D advection (hyperbolic), Forward-Time Centered-Space diffusion (parabolic), and Black-Scholes, which reduces to the same diffusion machinery under a change of variables.
 
@@ -18,7 +18,7 @@ This repo split off from [numkit](https://github.com/jyahdi-byte/numkit), which 
 
 # Hyperbolic PDEs
 
-NumKit implements an upwind finite-difference solver for the 1D advection equation:
+AdvDiff implements an upwind finite-difference solver for the 1D advection equation:
 
 u_t + c u_x = 0
 
@@ -42,7 +42,7 @@ The repository also includes deliberate CFL-violation experiments to demonstrate
 
 # Parabolic PDEs
 
-NumKit implements Forward-Time Centered-Space (FTCS) for the 1D diffusion equation:
+AdvDiff implements Forward-Time Centered-Space (FTCS) for the 1D diffusion equation:
 
 u_t = α u_xx
 
@@ -102,7 +102,7 @@ The result is validated against the closed-form Black-Scholes formula for a Euro
 # Repository Structure
 
 ```text
-pde-evolution/
+advdiff/
 ├── include/
 │   ├── advection.hpp
 │   ├── diffusion.hpp
